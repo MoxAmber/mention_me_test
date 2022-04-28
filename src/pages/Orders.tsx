@@ -19,9 +19,9 @@ export const Orders: FC = () => {
     [setOrders]
   );
 
-  const deleteOrder = (id: number) => {
+  const deleteOrder = useCallback((id: number) => {
     setOrders((orders) => orders.filter((order) => order.id !== id));
-  };
+  }, [setOrders]);
 
   const getPendingShipmentCount = () => {
     // var c = 0;
