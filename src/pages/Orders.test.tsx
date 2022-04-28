@@ -2,7 +2,7 @@ import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import App from "../App";
 
-describe("App", () => {
+describe("Orders", () => {
   it("renders the main page", () => {
     const { getByRole } = render(<App />);
 
